@@ -27,6 +27,12 @@
       padding: 20px;
       font-style:normal;
     }
+
+    .side-content {
+      flex: 1;
+      padding: 20px;
+      font-style: normal;
+    }
     
 
     header {
@@ -138,6 +144,40 @@
           <li><p><b>Interests:</b> Badminton</p></li>
         </ul>
       </section>
+    </div>
+    <div class="side-content">
+      <header>
+        <h1>Do ping me for more details</h1>
+      </header>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+      
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"required><br><br>
+      
+        <label for="role">Role:</label>
+        
+        <input type="radio" id="technical" name="role" value="technical">
+        <label for="technical">Technical</label>
+    
+        <input type="radio" id="Non-technical" name="role" value="Non-technical">
+        <label for="Non-technical">Non-Technical</label><br><br>
+      
+        <label for="package">Package:</label>
+        <input type="text" name="alphanumeric_field" pattern="[a-zA-Z0-9]+" required><br><br>
+      
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+      
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="3" cols="30" required></textarea><br><br>
+      
+        <input type="submit" value="Submit">
+      </form>
     </div>
     
 
